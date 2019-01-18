@@ -1,0 +1,10 @@
+function askweather(){
+    var weather;
+    var api='http://api.openweathermap.org/data/2.5/weather?q=';
+   var apikey ='dacbaf5c8f8045e71d4ea1c1247b49fe';
+
+    document.getElementById("city").value;
+   window.alert('viki');
+	 var fullpath = api+city.value+"&APPID="+apikey ;
+	window.location.href=fullpath;
+} 

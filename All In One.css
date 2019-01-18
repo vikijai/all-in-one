@@ -1,0 +1,52 @@
+.top{
+    float:left;
+	width:50%;
+	height:370px;
+	background-color:black;
+	color:white;
+
+	text-align:center;
+	font-size:100px;
+}
+.topr{
+    float:left;
+	width:50%;
+	height:370px;
+	background-color:brown;
+	color:black;
+
+	text-align:center;
+	font-size:100px;
+}
+
+
+.down{
+	float:right;
+	width:50%;
+	height:370px;
+	background-color:brown;
+	color:black;
+	
+	text-align:center;
+	font-size:100px;
+}
+.downr{
+    float:right;
+	width:50%;
+	height:370px;
+	background-color:black;
+	color:white;
+	
+	text-align:center;
+	font-size:100px;
+}
+
+
+ul li a{
+	text-decoration:none;
+	diplay:block;
+	color:white;
+}
+li{
+	list-style-type:none;
+}

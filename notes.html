@@ -1,0 +1,37 @@
+<html>
+     <head>
+           <title>NOteS</title>
+            
+         </head>
+    <body>
+          <div>
+              <input id="maintext" type="text" >
+              <button type="button" onclick="notes()"> AddValue </button>  
+
+
+             </div>
+             <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+            <script>
+              // Initialize Firebase
+              var config = {
+                apiKey: "AIzaSyBZXVL5U93-IUJRUCL1xRTDsBLfDzWj5lg",
+                authDomain: "notes-c5699.firebaseapp.com",
+                databaseURL: "https://notes-c5699.firebaseio.com",
+                projectId: "notes-c5699",
+                storageBucket: "notes-c5699.appspot.com",
+                messagingSenderId: "238989472522"
+              };
+              firebase.initializeApp(config);
+              </script>
+              <script>
+                
+                 function notes() {
+                  window.alert('viki');
+                  var maintext=document.getElementById("maintext");  
+                  var firebaseRef = firebase.database().ref();
+                  firebaseRef.child("AddData").push().set(maintext.value);
+                 }
+              </script>
+
+  </body>
+</html>
